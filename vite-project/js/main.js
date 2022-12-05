@@ -1,4 +1,5 @@
 import "../styles/style.css";
+import { hohoho } from "./hohoho";
 
 document.querySelector("#app").innerHTML = `
   <div>
