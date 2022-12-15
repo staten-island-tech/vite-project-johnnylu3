@@ -49,8 +49,8 @@
 }
 
 .cool {
-  --primary: var(--dark-blue);
-  --secondary: var(--light-blue);
+  --primary: var(--dark-red);
+  --secondary: var(--light-red);
 }
 .hero{
   background-color: var(--primary);
