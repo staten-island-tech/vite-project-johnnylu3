@@ -20,3 +20,9 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
+data
+  .filter((e) => e.type.includes("lol"))
+  .forEach((e) => {
+    console.log(e.name);
+    DOM.box.insertAdjacentHTML = `<h1>${e.name}</h1>`;
+  });
