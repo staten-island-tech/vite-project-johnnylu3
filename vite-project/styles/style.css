@@ -5,13 +5,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+background-color: var(--primary);
   margin-top: 60px;
   height: 100vh;
   width: 100vw;
+
 }
 .animation {
-  background-color: blue;
+  background-color: var(--secondary);
   height:90vh;
 }
 .header-animation{ 
@@ -58,6 +59,8 @@
 
 .main{
 background-color: var(--secondary)};
+
+.animation{background-color: var(--primary)};
 
 h1
 {font-size: var(--h1)};
