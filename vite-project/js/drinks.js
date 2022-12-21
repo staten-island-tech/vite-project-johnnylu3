@@ -1,4 +1,4 @@
-const drinks = [
+let drinks = [
   {
     name: "water",
     hotorcold: ["cold", "hot"],
@@ -52,7 +52,7 @@ const drinks = [
     hotorcold: ["hot", "cold"],
     type: "coffee",
     price: 8,
-    img: "https://www.willcookforsmiles.com/wp-content/uploads/2019/11/Hot-Chocolate-5-1.jpg",
+    img: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     healthy: false,
   },
   {
