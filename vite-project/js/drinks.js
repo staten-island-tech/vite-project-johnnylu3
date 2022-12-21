@@ -4,7 +4,7 @@ let drinks = [
     hotorcold: ["cold", "hot"],
     type: "water",
     price: 2,
-    img: "https://images.absolutdrinks.com/drink-images/Raw/Absolut/1024d9d2-0d05-41a3-b515-8dbb5e13d2b3.jpg",
+    img: "https://cbss.co.za/wp-content/uploads/2021/11/CBSS-Square-Image-8.jpg",
     healthy: true,
   },
   {
@@ -12,7 +12,7 @@ let drinks = [
     hotorcold: ["cold", "hot"],
     type: "water",
     price: 2,
-    img: "https://tasteofartisan.com/wp-content/uploads/2019/03/Homemade-carbonated-water-in-a-glass.jpg",
+    img: "https://whitewaternow.com/wp-content/uploads/2018/06/drinking-sparkling-water-side-effects.jpg",
     healthy: true,
   },
   {
@@ -20,7 +20,7 @@ let drinks = [
     hotorcold: "cold",
     type: "soda",
     price: 4,
-    img: "https://cdn.shopify.com/s/files/1/2679/6864/products/grocery-coca-cola-classic-canned-coke-products-12-oz-can-14052198088757_1024x1024.png?v=1611222385",
+    img: "https://images.english.elpais.com/resizer/R6YspvxWIe0hgJtDRo4o1GNvyMQ=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/LMOKDYNLMD64ZCSK4YL23ELEGY.jpg",
     healthy: false,
   },
   {
@@ -28,7 +28,7 @@ let drinks = [
     hotorcold: "cold",
     type: "soda",
     price: 4,
-    img: "https://scene7.samsclub.com/is/image/samsclub/0004900007727_B?wid=400&hei=400",
+    img: "https://editors.dexerto.com/wp-content/uploads/2022/04/18/TikTokSpriteChallenge.jpg",
     healthy: false,
   },
   {
