@@ -4,6 +4,13 @@ import "./drinks";
 import "./dom";
 import { drinks } from "./drinks";
 import { DOMSelectors } from "./dom";
+const ez = drinks.filter((drink) => drink.hotorcold.includes("hot"));
+
+function printHot() {
+  ez.forEach((drink) => {
+    console.log(drink.name);
+  });
+}
 
 document.querySelector("#app").innerHTML = `
     <h1>Bev</h1> 
@@ -45,19 +52,13 @@ document.querySelector(".dark").addEventListener("click", function () {
 
 document.querySelector(".hot").addEventListener("click", function () {
   console.clear();
-  const filteredCards = drinks
-    .filter((drink) => drink.hotorcold.includes("hot"))
-    .map((drink) => {
-      return (
-        '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>"
-      );
-    });
-
-  cardsContainer.innerHTML = filteredCards.join("\n");
-  drink.forEach((drink) => {
-    console.log(drink.name);
+  printHot();
+  const ez1 = ez.map((drink) => {
+    return '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>";
   });
+  cardsContainer.innerHTML = ez1.join("\n");
 });
+
 document.querySelector(".cold").addEventListener("click", function () {
   console.clear();
   const filteredCards = drinks
@@ -70,7 +71,6 @@ document.querySelector(".cold").addEventListener("click", function () {
       );
     });
   cardsContainer.innerHTML = filteredCards.join("\n");
-  drinks.forEach((drink) => console.log(drink.name));
 });
 
 document.querySelector(".healthy").addEventListener("click", function () {
