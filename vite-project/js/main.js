@@ -4,7 +4,11 @@ import "./drinks";
 import "./dom";
 import { drinks } from "./drinks";
 import { DOMSelectors } from "./dom";
+
 const ez = drinks.filter((drink) => drink.hotorcold.includes("hot"));
+
+const et = drinks.filter((drink) => drink.hotorcold.includes("cold"));
+const er = drinks.filter((drink) => drink.healthy === true);
 
 function printHot() {
   ez.forEach((drink) => {
@@ -12,15 +16,17 @@ function printHot() {
   });
 }
 
-document.querySelector("#app").innerHTML = `
-    <h1>Bev</h1> 
-    <div class="buttons">
-    <button class="light">Light</button>
-    <button class="dark">Dark</button>
-    <button class="hot">hot</button>
-    <button class="cold">cold</button>
-    <button class="healthy">healthy</button>
-  </div>`;
+function printCold() {
+  et.forEach((drink) => {
+    console.log(drink.name);
+  });
+}
+
+function printHealthy() {
+  er.forEach((drink) => {
+    console.log(drink.name);
+  });
+}
 
 drinks.forEach((drink) => {
   DOMSelectors.display.insertAdjacentHTML(
@@ -31,12 +37,6 @@ drinks.forEach((drink) => {
   </div>`
   );
 });
-/* <h3 class="type"> Species:${drink.species}</h3>
-<h3 class= "price> Price:${monkey.price}</h3>
-<h3 class="old"> Age:${monkey.age}</h3>
-<h3 class="gender"> Gender:${monkey.gender}</h3>
-<h3 class="availability"> Available:${monkey.available}</h3>
-<h3 class="IQ"> Smart:${monkey.smart}</h3> */
 
 const cardsContainer = document.querySelector(".display");
 
@@ -61,28 +61,20 @@ document.querySelector(".hot").addEventListener("click", function () {
 
 document.querySelector(".cold").addEventListener("click", function () {
   console.clear();
-  const filteredCards = drinks
-    .filter(
-      (drink) => drink.hotorcold === "cold" || drink.hotorcold.includes("cold")
-    )
-    .map((drink) => {
-      return (
-        '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>"
-      );
-    });
-  cardsContainer.innerHTML = filteredCards.join("\n");
+  printCold();
+  const ez2 = et.map((drink) => {
+    return '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>";
+  });
+  cardsContainer.innerHTML = ez2.join("\n");
 });
 
 document.querySelector(".healthy").addEventListener("click", function () {
   console.clear();
-  const filteredCards = drinks
-    .filter((drink) => drink.healthy === true)
-    .map((drink) => {
-      return (
-        '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>"
-      );
-    });
-  cardsContainer.innerHTML = filteredCards.join("\n");
+  printHealthy();
+  const ez3 = er.map((drink) => {
+    return '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>";
+  });
+  cardsContainer.innerHTML = ez3.join("\n");
 
   drinks.forEach((drink) => console.log(drink.name));
 });
