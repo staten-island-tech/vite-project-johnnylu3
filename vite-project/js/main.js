@@ -71,10 +71,14 @@ document.querySelector(".cold").addEventListener("click", function () {
 document.querySelector(".healthy").addEventListener("click", function () {
   console.clear();
   printHealthy();
-  const ez3 = er.map((drink) => {
-    return '<div class="card">' + "<span>" + drink.name + "</span>" + "</div>";
+  er.map((el) => {
+    DOMSelectors.display.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="items">
+      <h4 class="name">${el.name}</h4>
+      <img class="food-imgs" src="${el.img}"></img>
+      <h5 class="price">${el.price}</h5>
+      </div>`
+    );
   });
-  cardsContainer.innerHTML = ez3.join("\n");
-
-  drinks.forEach((drink) => console.log(drink.name));
 });
