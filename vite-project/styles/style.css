@@ -120,9 +120,9 @@ body {background-color: var(--primary)}
 .display-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 25vw;
-  height: 85vh;
+  justify-content: space-evenly;
+  width: 27vw;
+  height: 65vh;
   margin: 1rem auto;
   align-items: center;
   background-color: var(--secondary);
