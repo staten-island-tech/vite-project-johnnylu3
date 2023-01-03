@@ -9,7 +9,7 @@ let drinks = [
   },
   {
     name: "sparkling water",
-    hotorcold: ["cold", "hot"],
+    hotorcold: "cold",
     type: "water",
     price: 2,
     img: "https://whitewaternow.com/wp-content/uploads/2018/06/drinking-sparkling-water-side-effects.jpg",
